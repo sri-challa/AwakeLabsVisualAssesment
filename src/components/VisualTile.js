@@ -42,7 +42,7 @@ const VisualTile = (props) => {
       case "anxietyLevel":
         contents.name = "Anxiety Level";
         contents.image = images.anxietyLevel;
-        contents.value = measureValue;
+        contents.value = `${measureValue}`;
         break;
       case "anxietyState":
         contents.name = "Anxiety State";
@@ -94,10 +94,11 @@ const VisualTile = (props) => {
   }
 
   function rightSideContent() {
-    if (getContent(false, true)) {
+    const displayContent = getContent(false, true);
+    if (displayContent) {
       return (
         <Text style={[styles.value, getTextStyle(measureValue, measureName)]}>
-          {getContent(false, true)}
+          {displayContent}
         </Text>
       );
     } else {
