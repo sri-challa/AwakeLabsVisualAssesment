@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "./src/screens/HomeScreen";
-import VisualOneScreen from "./src/screens/MeasurementsScreen";
+import MeasurementsScreen from "./src/screens/MeasurementsScreen";
 import { Colors } from "./src/assets/utils/colors";
 
 const Stack = createNativeStackNavigator();
@@ -20,8 +20,8 @@ export default function App() {
         >
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen
-            name="VisualOne"
-            component={VisualOneScreen}
+            name="Measurements"
+            component={MeasurementsScreen}
             options={{
               title: "Measurements",
             }}

@@ -7,8 +7,8 @@ const UserItem = (props) => {
   const { itemData } = props;
   const navigation = useNavigation();
 
-  function visualOnePressed() {
-    navigation.navigate("VisualOne", {
+  function measurementsPressed() {
+    navigation.navigate("Measurements", {
       data: {
         participantName: itemData.participantId,
         wearableDevice: itemData.wearableId,
@@ -34,7 +34,7 @@ const UserItem = (props) => {
 
   return (
     <View style={styles.main}>
-      <TouchableOpacity onPress={visualOnePressed}>
+      <TouchableOpacity onPress={measurementsPressed}>
         <View style={styles.container}>
           <Image
             style={styles.avatar}

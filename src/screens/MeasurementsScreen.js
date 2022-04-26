@@ -3,7 +3,7 @@ import VisualTile from "../components/VisualTile";
 import { dateAndTime } from "../assets/utils/commonUtil";
 import { Colors } from "../assets/utils/colors";
 
-const VisualOneScreen = ({ route }) => {
+const MeasurementsScreen = ({ route }) => {
   const { data } = route.params;
 
   function displayDateAndTime() {
@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default VisualOneScreen;
+export default MeasurementsScreen;

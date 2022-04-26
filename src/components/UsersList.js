@@ -29,9 +29,6 @@ class UsersList extends React.Component {
           data={this.state.userData}
           renderItem={this.renderItem}
           keyExtractor={(item) => item._id.$oid}
-          initialNumToRender={10}
-          maxToRenderPerBatch={10}
-          ListFooterComponent={<View style={{ width: 15 }}></View>}
         />
       </View>
     );
